@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Kids - In, On, Under</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="loader"><div class="bounce"></div><p>Loading...</p></div>
+
+  <nav>
+    <a href="index.html" class="logo">Happy<span>Kids</span></a>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="learn-objects.html">Learn: Objects</a>
+      <a href="learn-prepositions.html" class="active">Learn: Where?</a>
+      <div class="dropdown">
+        <a href="quiz1.html">Quiz</a>
+        <div class="dropdown-content">
+          <a href="quiz1.html">Quiz 1: Objects</a>
+          <a href="quiz2.html">Quiz 2: In, On, Under</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page">
+    <h2>Where is the ball?</h2>
+
+    <style>
+  .card-image {
+    display: block;
+    width: 100%;
+    height: 110px;
+    margin: 0 auto 8px;
+  }
+</style>
+
+<div class="grid">
+  <div class="card c1">
+    <!-- Ball IN the box -->
+    <svg class="card-image" viewBox="0 0 120 90" role="img" aria-label="Ball in a box">
+      <g stroke="#263653" stroke-width="4" stroke-linejoin="round">
+        <path d="M27 39 42 26h36l15 13-33 15z" fill="#b9e8ff"/>
+        <circle cx="60" cy="36" r="21" fill="#ff91a4"/>
+        <path d="M48 19c8 4 13 11 13 19s-3 13-9 18"
+              fill="none" stroke="#ffcf56" stroke-width="7"/>
+        <path d="M70 19c-7 5-10 12-9 20s5 13 11 17"
+              fill="none" stroke="#8edcc6" stroke-width="7"/>
+        <path d="M27 39 60 54l33-15v30L60 84 27 69z" fill="#75bde8"/>
+        <path d="m27 39 33 15 33-15-3 9-30 14-30-14z" fill="#d7f1ff"/>
+      </g>
+    </svg>
+    <h3>IN</h3>
+    <p>The ball is <b>in</b> the box.</p>
+  </div>
+
+  <div class="card c2">
+    <!-- Ball ON the chair -->
+    <svg class="card-image" viewBox="0 0 120 90" role="img" aria-label="Ball on a chair">
+      <g stroke="#263653" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M40 43V14q0-5 5-5h29q5 0 5 5v31" fill="#ffd34f"/>
+        <path d="m36 52-4 28M84 52l5 28" fill="none"/>
+        <circle cx="60" cy="36" r="19" fill="#ff91a4"/>
+        <path d="M49 20c7 4 11 10 11 17s-3 12-8 17"
+              fill="none" stroke="#ffcf56" stroke-width="7"/>
+        <path d="M69 21c-6 4-9 10-9 17s4 12 9 16"
+              fill="none" stroke="#8edcc6" stroke-width="7"/>
+        <path d="M27 47h66v9H27z" fill="#ffcf56"/>
+      </g>
+    </svg>
+    <h3>ON</h3>
+    <p>The ball is <b>on</b> the chair.</p>
+  </div>
+
+  <div class="card c3">
+    <!-- Ball UNDER the chair -->
+    <svg class="card-image" viewBox="0 0 120 90" role="img" aria-label="Ball under a chair">
+      <g stroke="#263653" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M40 35V10q0-5 5-5h29q5 0 5 5v25" fill="#ffd34f"/>
+        <path d="M27 34h66v9H27z" fill="#ffcf56"/>
+        <path d="m34 43-5 38M86 43l5 38" fill="none"/>
+        <circle cx="60" cy="65" r="15" fill="#ff91a4"/>
+        <path d="M52 53c5 3 8 8 8 13s-2 10-6 13"
+              fill="none" stroke="#ffcf56" stroke-width="6"/>
+        <path d="M68 54c-5 4-7 8-7 13s3 9 7 12"
+              fill="none" stroke="#8edcc6" stroke-width="6"/>
+      </g>
+    </svg>
+    <h3>UNDER</h3>
+    <p>The ball is <b>under</b> the chair.</p>
+  </div>
+
+  <div class="card c4">
+    <!-- Ball BETWEEN two chairs -->
+    <svg class="card-image" viewBox="0 0 120 90" role="img" aria-label="Ball between two chairs">
+      <g stroke="#263653" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Left chair -->
+        <path d="M14 34V13q0-4 4-4h17q4 0 4 4v22" fill="#b9e8ff"/>
+        <path d="M10 34h33v7H10z" fill="#75bde8"/>
+        <path d="m15 41-3 35M38 41l3 35" fill="none"/>
+        <!-- Right chair -->
+        <path d="M81 34V13q0-4 4-4h17q4 0 4 4v22" fill="#ffd34f"/>
+        <path d="M77 34h33v7H77z" fill="#ffcf56"/>
+        <path d="m82 41-3 35M105 41l3 35" fill="none"/>
+        <!-- Ball between chairs -->
+        <circle cx="60" cy="60" r="16" fill="#ff91a4"/>
+        <path d="M51 48c6 3 9 7 9 13s-2 10-6 14"
+              fill="none" stroke="#ffcf56" stroke-width="6"/>
+        <path d="M68 49c-5 4-8 8-8 13s3 10 7 13"
+              fill="none" stroke="#8edcc6" stroke-width="6"/>
+      </g>
+    </svg>
+    <h3>BETWEEN</h3>
+    <p>The ball is <b>between</b> the chairs.</p>
+  </div>
+</div>
+
+    <div class="minitask">
+      <h3>Mini Task: The ball is ___ the box.</h3>
+      <br>
+      <button class="btn blue" onclick="checkMiniTask(false)">on</button>
+      <button class="btn green" onclick="checkMiniTask(true)">in</button>
+      <button class="btn" onclick="checkMiniTask(false)">under</button>
+      <p id="taskMsg"></p>
+    </div>
+
+    <p style="text-align:center; margin-top:30px;">
+      <a href="quiz1.html" class="btn green">Go to Quiz</a>
+    </p>
+  </div>
+
+  <footer>© 2026 Happy Kids | TSE2513 Project</footer>
+  <script src="script.js"></script>
+</body>
+</html>
