@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Kids - Quiz 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="loader"><div class="bounce"></div><p>Loading...</p></div>
+
+  <nav>
+    <a href="index.html" class="logo">Happy<span>Kids</span></a>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="learn-objects.html">Learn: Objects</a>
+      <a href="learn-prepositions.html">Learn: Where?</a>
+      <div class="dropdown">
+        <a href="quiz1.html" class="active">Quiz</a>
+        <div class="dropdown-content">
+          <a href="quiz1.html">Quiz 1: Objects</a>
+          <a href="quiz2.html">Quiz 2: In, On, Under</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page">
+    <h2>Quiz 1: Classroom Objects</h2>
+
+    <form id="quizForm" data-first="1" data-count="5">
+
+      <div class="question">
+        <div class="emoji">✏️</div>
+        <h3>1. What is this?</h3>
+        <div class="options">
+          <label><input type="radio" name="Q1" id="Q1" value="true">Pencil</label>
+          <label><input type="radio" name="Q1" id="Q1" value="false">Book</label>
+        </div>
+        <div class="feedback" id="fb1"></div>
+      </div>
+
+      <div class="question">
+        <div class="emoji">📕</div>
+        <h3>2. What is this?</h3>
+        <div class="options">
+          <label><input type="radio" name="Q2" id="Q2" value="false">Bag</label>
+          <label><input type="radio" name="Q2" id="Q2" value="true">Book</label>
+        </div>
+        <div class="feedback" id="fb2"></div>
+      </div>
+
+      <div class="question">
+        <div class="emoji">🎒</div>
+        <h3>3. What is this?</h3>
+        <div class="options">
+          <label><input type="radio" name="Q3" id="Q3" value="true">Bag</label>
+          <label><input type="radio" name="Q3" id="Q3" value="false">Chair</label>
+        </div>
+        <div class="feedback" id="fb3"></div>
+      </div>
+
+      <div class="question">
+        <div class="emoji">🪑</div>
+        <h3>4. What is this?</h3>
+        <div class="options">
+          <label><input type="radio" name="Q4" id="Q4" value="false">Clock</label>
+          <label><input type="radio" name="Q4" id="Q4" value="true">Chair</label>
+        </div>
+        <div class="feedback" id="fb4"></div>
+      </div>
+
+      <div class="question">
+        <div class="emoji">⏰</div>
+        <h3>5. What is this?</h3>
+        <div class="options">
+          <label><input type="radio" name="Q5" id="Q5" value="true">Clock</label>
+          <label><input type="radio" name="Q5" id="Q5" value="false">Ruler</label>
+        </div>
+        <div class="feedback" id="fb5"></div>
+      </div>
+
+      <div id="result"></div>
+
+      <div class="quiz-buttons">
+        <button type="button" class="btn green" id="submitBtn" onclick="CheckAnswer()">Check Answer</button>
+        <button type="button" class="btn blue" onclick="TakeQuizAgain()">Take Quiz Again</button>
+        <a href="quiz2.html" class="btn">Next Quiz</a>
+      </div>
+    </form>
+  </div>
+
+  <footer>© 2026 Happy Kids | TSE2513 Project</footer>
+  <script src="script.js"></script>
+</body>
+</html>

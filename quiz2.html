@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Kids - Quiz 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="loader"><div class="bounce"></div><p>Loading...</p></div>
+
+  <nav>
+    <a href="index.html" class="logo">Happy<span>Kids</span></a>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="learn-objects.html">Learn: Objects</a>
+      <a href="learn-prepositions.html">Learn: Where?</a>
+      <div class="dropdown">
+        <a href="quiz1.html" class="active">Quiz</a>
+        <div class="dropdown-content">
+          <a href="quiz1.html">Quiz 1: Objects</a>
+          <a href="quiz2.html">Quiz 2: In, On, Under</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page">
+    <h2>Quiz 2: In, On, Under</h2>
+
+    <form id="quizForm" data-first="6" data-count="5">
+
+      <div class="question">
+        <div class="emoji">⚽ ➡️ 📦</div>
+        <h3>6. The ball is ___ the box.</h3>
+        <div class="options">
+          <label><input type="radio" name="Q6" id="Q6" value="true">in</label>
+          <label><input type="radio" name="Q6" id="Q6" value="false">on</label>
+        </div>
+        <div class="feedback" id="fb6"></div>
+      </div>
+
+      <div class="question">
+        <div class="emoji">🐱 ⬆️ 🪑</div>
+        <h3>7. The cat is ___ the chair.</h3>
+        <div class="options">
+          <label><input type="radio" name="Q7" id="Q7" value="false">under</label>
+          <label><input type="radio" name="Q7" id="Q7" value="true">on</label>
+        </div>
+        <div class="feedback" id="fb7"></div>
+      </div>
+
+      <div class="question">
+        <div class="emoji">🐶 ⬇️ 🪑</div>
+        <h3>8. The dog is ___ the chair.</h3>
+        <div class="options">
+          <label><input type="radio" name="Q8" id="Q8" value="true">under</label>
+          <label><input type="radio" name="Q8" id="Q8" value="false">in</label>
+        </div>
+        <div class="feedback" id="fb8"></div>
+      </div>
+
+      <div class="question">
+        <div class="emoji">✏️ ➡️ 🎒</div>
+        <h3>9. The pencil is ___ the bag.</h3>
+        <div class="options">
+          <label><input type="radio" name="Q9" id="Q9" value="false">on</label>
+          <label><input type="radio" name="Q9" id="Q9" value="true">in</label>
+        </div>
+        <div class="feedback" id="fb9"></div>
+      </div>
+
+      <div class="question">
+        <div class="emoji">📕 ⬆️ 🪑</div>
+        <h3>10. The book is ___ the chair.</h3>
+        <div class="options">
+          <label><input type="radio" name="Q10" id="Q10" value="true">on</label>
+          <label><input type="radio" name="Q10" id="Q10" value="false">under</label>
+        </div>
+        <div class="feedback" id="fb10"></div>
+      </div>
+
+      <div id="result"></div>
+
+      <div class="quiz-buttons">
+        <button type="button" class="btn green" id="submitBtn" onclick="CheckAnswer()">Check Answer</button>
+        <button type="button" class="btn blue" onclick="TakeQuizAgain()">Take Quiz Again</button>
+        <a href="index.html" class="btn">Back Home</a>
+      </div>
+    </form>
+  </div>
+
+  <footer>© 2026 Happy Kids | TSE2513 Project</footer>
+  <script src="script.js"></script>
+</body>
+</html>
